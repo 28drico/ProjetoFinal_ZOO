@@ -9,5 +9,18 @@
         android:id="@+id/listaAnimalFragment"
         android:name="br.com.zup.projetofinalindividual.ui.listaAnimal.ListaAnimalFragment"
         android:label="fragment_lista_animal"
-        tools:layout="@layout/fragment_lista_animal" />
+        tools:layout="@layout/fragment_lista_animal" >
+        <action
+            android:id="@+id/action_listaAnimalFragment_to_listaFavoritoFragment"
+            app:destination="@id/listaFavoritoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaFavoritoFragment"
+        android:name="br.com.zup.projetofinalindividual.ui.listaFavorito.ListaFavoritoFragment"
+        android:label="fragment_lista_favorito"
+        tools:layout="@layout/fragment_lista_favorito" >
+        <action
+            android:id="@+id/action_listaFavoritoFragment_to_listaAnimalFragment"
+            app:destination="@id/listaAnimalFragment" />
+    </fragment>
 </navigation>
