@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/lista_animal"
+        android:id="@+id/ListaAnimal"
+        android:icon="@drawable/lista_animal"/>
+
+    <item android:title="@string/lista_favorito"
+        android:id="@+id/ListaFavorito"
+        android:icon="@drawable/lista_favorita"/>
+
+</menu>
