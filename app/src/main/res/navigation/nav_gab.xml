@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listaAnimalFragment">
+
+    <fragment
+        android:id="@+id/listaAnimalFragment"
+        android:name="br.com.zup.projetofinalindividual.ui.listaAnimal.ListaAnimalFragment"
+        android:label="fragment_lista_animal"
+        tools:layout="@layout/fragment_lista_animal" />
+</navigation>
