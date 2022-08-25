@@ -6,4 +6,16 @@
     <string name="lista_favorito">Lista Favorito</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagem_de_animal">Imagem de animal</string>
+    <string name="titulo_tipo_de_animais">Titulo tipo de animais</string>
+    <string name="tipo_de_animal">Tipo de animal</string>
+    <string name="tempo_ativo">Tempo ativo</string>
+    <string name="comprimento_minimo">Comprimento minimo</string>
+    <string name="comprimento_maximo">Comprimento maximo</string>
+    <string name="peso_minimo">Peso minimo</string>
+    <string name="peso_maximo">Peso maximo</string>
+    <string name="habitat">Habitat</string>
+    <string name="dieta">Dieta</string>
+    <string name="faixa_geografia">Faixa geografia</string>
+    <string name="icone_de_coracao_sem_cor">Icone de coração sem cor</string>
 </resources>
