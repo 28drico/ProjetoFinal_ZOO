@@ -7,7 +7,32 @@
 
     <fragment
         android:id="@+id/listaAnimalFragment"
-        android:name="br.com.zup.projetofinalindividual.ui.listaAnimal.ListaAnimalFragment"
+        android:name="br.com.zup.projetofinalindividual.ui.listaAnimal.view.ListaAnimalFragment"
         android:label="fragment_lista_animal"
-        tools:layout="@layout/fragment_lista_animal" />
+        tools:layout="@layout/fragment_lista_animal" >
+        <action
+            android:id="@+id/action_listaAnimalFragment_to_listaFavoritoFragment"
+            app:destination="@id/listaFavoritoFragment" />
+        <action
+            android:id="@+id/action_listaAnimalFragment_to_detalheItemAnimalFragment"
+            app:destination="@id/detalheItemAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaFavoritoFragment"
+        android:name="br.com.zup.projetofinalindividual.ui.listaFavorito.ListaFavoritoFragment"
+        android:label="fragment_lista_favorito"
+        tools:layout="@layout/fragment_lista_favorito" >
+        <action
+            android:id="@+id/action_listaFavoritoFragment_to_listaAnimalFragment"
+            app:destination="@id/listaAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalheItemAnimalFragment"
+        android:name="br.com.zup.projetofinalindividual.ui.detalhe.DetalheItemAnimalFragment"
+        android:label="fragment_detalhe_item_animal"
+        tools:layout="@layout/fragment_detalhe_item_animal" >
+        <action
+            android:id="@+id/action_detalheItemAnimalFragment_to_listaAnimalFragment"
+            app:destination="@id/listaAnimalFragment" />
+    </fragment>
 </navigation>

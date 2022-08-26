@@ -9,16 +9,15 @@
     tools:context=".ui.home.view.HomeActivity">
 
     <fragment
+        android:id="@+id/nav_host_fragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        app:navGraph="@navigation/nav_gab"
-        >
+        app:navGraph="@navigation/nav_gab">
 
     </fragment>
 
@@ -33,10 +32,10 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:contentDescription="@string/logo_zoo"
-            android:layout_margin="@dimen/size_15dp"
+            android:layout_margin="15dp"
             android:src="@drawable/zoo_para_logo_toolbar">
         </ImageView>
 
