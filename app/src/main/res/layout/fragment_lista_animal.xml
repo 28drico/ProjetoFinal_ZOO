@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/amarelo"
-    tools:context=".ui.listaAnimal.ListaAnimalFragment">
+    tools:context=".ui.listaAnimal.view.ListaAnimalFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_listaAnimal"
