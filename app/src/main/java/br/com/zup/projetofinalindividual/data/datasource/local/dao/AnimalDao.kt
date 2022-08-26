@@ -6,7 +6,7 @@ import br.com.zup.projetofinalindividual.data.model.AnimalResult
 @Dao
 interface AnimalDao {
 
-    @Query("SELECT * FROM animals ORDER BY name ASC")
+    @Query("SELECT * FROM item")
     fun getAllAnimal(): List<AnimalResult>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE )
@@ -17,4 +17,13 @@ interface AnimalDao {
 
 //    @Update(onConflict = OnConflictStrategy.REPLACE)
 //    fun updateFavoritoPersonagens(personagensResult: PersonagensResult)
+
+    @Query("Select * From item")
+    fun getCartList(): List<AnimalResult>
+
+    @Update(onConflict = OnConflictStrategy.REPLACE)
+    fun updateCartList(item: AnimalResult)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertIntoCart(item: AnimalResult)
 }

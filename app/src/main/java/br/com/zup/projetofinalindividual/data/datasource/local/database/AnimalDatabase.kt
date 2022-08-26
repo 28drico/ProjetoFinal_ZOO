@@ -11,25 +11,25 @@ import br.com.zup.projetofinalindividual.data.model.AnimalResult
 abstract class AnimalDatabase : RoomDatabase() {
     abstract fun animalDao(): AnimalDao
 
-    companion object{
-        @Volatile
-        private var INSTANCE: AnimalDatabase? = null
-
-        fun getAnimaisDataBase(context: Context): AnimalDatabase{
-            val tempInstance = INSTANCE
-            if (tempInstance != null){
-                return tempInstance
-            }
-            synchronized(this){
-                val instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    AnimalDatabase::class.java,
-                    "personagem_database"
-                ).fallbackToDestructiveMigration()
-                    .build()
-                INSTANCE = instance
-                return instance
-            }
-        }
-    }
+//    companion object{
+//        @Volatile
+//        private var INSTANCE: AnimalDatabase? = null
+//
+//        fun getAnimaisDataBase(context: Context): AnimalDatabase{
+//            val tempInstance = INSTANCE
+//            if (tempInstance != null){
+//                return tempInstance
+//            }
+//            synchronized(this){
+//                val instance = Room.databaseBuilder(
+//                    context.applicationContext,
+//                    AnimalDatabase::class.java,
+//                    "personagem_database"
+//                ).fallbackToDestructiveMigration()
+//                    .build()
+//                INSTANCE = instance
+//                return instance
+//            }
+//        }
+  //  }
 }
