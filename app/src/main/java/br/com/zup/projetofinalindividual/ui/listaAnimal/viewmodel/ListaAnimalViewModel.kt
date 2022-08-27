@@ -2,9 +2,8 @@ package br.com.zup.projetofinalindividual.ui.listaAnimal.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
 import br.com.zup.projetofinalindividual.data.model.AnimalResult
 import br.com.zup.projetofinalindividual.domain.model.SingleLiveEvent
 import br.com.zup.projetofinalindividual.domain.usecase.AnimalUseCase
@@ -13,34 +12,23 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class ListaAnimalViewModel():ViewModel(){
+class ListaAnimalViewModel(application: Application):AndroidViewModel(application){
 
-    private val animalUsecase = AnimalUseCase()
-    val animalList = SingleLiveEvent<ViewState<List<AnimalResult>>>()
+    private val animalUsecase = AnimalUseCase(application)
+    val animalList = SingleLiveEvent<ViewState<List<AnimalResponseItem>>>()
 
     fun getAllAnimalNetwork(){
         viewModelScope.launch {
-            animalList.value = ViewState.loading(null)
             try {
-                val withContext = withContext(Dispatchers.Default){
+                val response = withContext(Dispatchers.IO){
                     animalUsecase.getAllAnimais()
-//                    animalUsecase.getAllAnimaisNetwork()
+                    animalUsecase.getAllAnimaisNetwork()
                 }
-                withContext?.let {
-                    animalList.value = ViewState.success(it.data)
-                }
-            }catch (ex : Exception){
-                animalList.value = ViewState.error(null,ex.message)
-            }
-        }
-    }
-    class MenuViewModelFactory(): ViewModelProvider.Factory{
-        override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            if(modelClass.isAssignableFrom(ListaAnimalViewModel::class.java)){
-                return ListaAnimalViewModel() as T
-            }
-            throw IllegalArgumentException("unknown viewmodel class")
-        }
-    }
+                    animalList.value = response
 
+            }catch (ex : Exception){
+                animalList.value = ViewState.Error(Exception("erro"))
+            }
+        }
+    }
 }

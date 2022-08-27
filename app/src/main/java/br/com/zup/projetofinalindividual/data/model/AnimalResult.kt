@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-@Entity(tableName = "item")
+@Entity(tableName = "animals")
 data class AnimalResult (
     @SerializedName("id")
     @PrimaryKey(autoGenerate = false)

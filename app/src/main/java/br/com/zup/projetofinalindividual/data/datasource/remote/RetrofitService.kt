@@ -10,39 +10,31 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.util.concurrent.TimeUnit
 
-object RetrofitService {
-//    companion object{
+class RetrofitService {
+    companion object{
         const val Base_URl = "https://zoo-animal-api.herokuapp.com/"
 
-    fun getAPI(): AnimalItemAPI {
-        val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
-        return Retrofit.Builder().addConverterFactory(MoshiConverterFactory.create(moshi)).baseUrl(
-            Base_URl
-        ).build().create(
-            AnimalItemAPI::class.java)
+        private val retrofit: Retrofit by lazy {
+            val httpClient = OkHttpClient.Builder()
+            httpClient.readTimeout(30, TimeUnit.SECONDS)
+            httpClient.connectTimeout(30, TimeUnit.SECONDS)
+            httpClient.writeTimeout(30, TimeUnit.SECONDS)
+
+            if (BuildConfig.DEBUG){
+                val logInterceptor = HttpLoggingInterceptor()
+                logInterceptor.level = HttpLoggingInterceptor.Level.BODY
+                httpClient.addInterceptor(logInterceptor)
+            }
+
+            Retrofit.Builder()
+                .baseUrl(Base_URl)
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(httpClient.build())
+                .build()
+        }
+        @JvmStatic
+        val apiService: AnimalItemAPI
+            get() = retrofit.create(AnimalItemAPI::class.java)
+
     }
-
-//        private val retrofit: Retrofit by lazy {
-//            val httpClient = OkHttpClient.Builder()
-//            httpClient.readTimeout(30, TimeUnit.SECONDS)
-//            httpClient.connectTimeout(30, TimeUnit.SECONDS)
-//            httpClient.writeTimeout(30, TimeUnit.SECONDS)
-//
-//            if (BuildConfig.DEBUG){
-//                val logInterceptor = HttpLoggingInterceptor()
-//                logInterceptor.level = HttpLoggingInterceptor.Level.BODY
-//                httpClient.addInterceptor(logInterceptor)
-//            }
-//
-//            Retrofit.Builder()
-//                .baseUrl(Base_URl)
-//                .addConverterFactory(GsonConverterFactory.create())
-//                .client(httpClient.build())
-//                .build()
-//        }
-//        @JvmStatic
-//        val apiService: AnimalItemAPI
-//            get() = retrofit.create(AnimalItemAPI::class.java)
-
-   // }
 }

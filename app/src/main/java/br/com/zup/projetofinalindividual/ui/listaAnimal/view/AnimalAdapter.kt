@@ -1,23 +1,22 @@
 package br.com.zup.projetofinalindividual.ui.listaAnimal.view
 
-import android.graphics.ImageFormat.JPEG
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import br.com.zup.projetofinalindividual.URL_BASE_IMG
+import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
 import br.com.zup.projetofinalindividual.data.model.AnimalResult
 import br.com.zup.projetofinalindividual.databinding.ListaAnimalItemBinding
 import com.squareup.picasso.Picasso
 
 class AnimalAdapter(
-    private var animalList: MutableList<AnimalResult>,
-    private val clickAnimal: (animal: AnimalResult) -> Unit,
+    private var animalList: MutableList<AnimalResponseItem>,
+    private val clickAnimal: (animal: AnimalResponseItem) -> Unit,
 ): RecyclerView.Adapter<AnimalAdapter.ViewHolder>() {
 
 
     class ViewHolder(val binding: ListaAnimalItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun showPersonagem(animalResult: AnimalResult) {
-            Picasso.get().load(URL_BASE_IMG + animalResult.id + JPEG)
+        fun showAnimal(animalResult:AnimalResponseItem) {
+            Picasso.get().load(animalResult.imageLink)
                 .into(binding.ivItemImage)
             binding.tvTipoAnimal.text = animalResult.name
         }
@@ -30,7 +29,7 @@ class AnimalAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val animal = animalList[position]
-        holder.showPersonagem(animal)
+        holder.showAnimal(animal)
         holder.binding.cvListaAnimal.setOnClickListener{
             clickAnimal(animal)
         }
@@ -38,7 +37,7 @@ class AnimalAdapter(
 
     override fun getItemCount(): Int = animalList.size
 
-    fun updateAnimalList(atualizaLista: MutableList<AnimalResult>){
+    fun updateAnimalList(atualizaLista: MutableList<AnimalResponseItem>){
         animalList = atualizaLista
         notifyDataSetChanged()
     }
