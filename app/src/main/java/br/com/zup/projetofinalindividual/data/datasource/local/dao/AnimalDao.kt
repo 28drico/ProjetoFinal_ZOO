@@ -1,8 +1,10 @@
 package br.com.zup.projetofinalindividual.data.datasource.local.dao
 
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
-import br.com.zup.projetofinalindividual.data.model.AnimalResult
 
 @Dao
 interface AnimalDao {

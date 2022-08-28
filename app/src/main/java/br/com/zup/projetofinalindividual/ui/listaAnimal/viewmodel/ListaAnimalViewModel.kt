@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
-import br.com.zup.projetofinalindividual.data.model.AnimalResult
 import br.com.zup.projetofinalindividual.domain.model.SingleLiveEvent
 import br.com.zup.projetofinalindividual.domain.usecase.AnimalUseCase
 import br.com.zup.projetofinalindividual.viewstate.ViewState

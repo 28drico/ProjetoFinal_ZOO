@@ -6,7 +6,6 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import br.com.zup.projetofinalindividual.data.datasource.local.dao.AnimalDao
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
-import br.com.zup.projetofinalindividual.data.model.AnimalResult
 
 @Database(entities = [AnimalResponseItem::class], version = 3)
 abstract class AnimalDatabase : RoomDatabase() {
