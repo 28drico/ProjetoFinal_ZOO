@@ -29,4 +29,26 @@ class AnimalUseCase (application: Application){
             ViewState.Error(Exception("erro"))
         }
     }
+
+    fun getAllFavoritoAnimais(): ViewState<List<AnimalResponseItem>>{
+        return try {
+            val animal = animaisRepository.getAllFavorito()
+            if (animal.isEmpty()){
+                ViewState.EmptyList(animal)
+            }else{
+                ViewState.Success(animal)
+            }
+        }catch (e : Exception){
+            ViewState.Error(Exception("erro"))
+        }
+    }
+
+    fun updateFavoritoAnimal(animal: AnimalResponseItem): ViewState<AnimalResponseItem>{
+        return try {
+            animaisRepository.updateFavoritoAnimal(animal)
+            ViewState.Success(animal)
+        }catch (e : Exception){
+            ViewState.Error(Exception("erro"))
+        }
+    }
 }

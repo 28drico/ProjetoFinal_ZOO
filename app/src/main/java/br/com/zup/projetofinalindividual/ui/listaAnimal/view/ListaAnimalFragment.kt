@@ -14,7 +14,6 @@ import br.com.zup.projetofinalindividual.ANIMAL_KEY
 import br.com.zup.projetofinalindividual.R
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
 import br.com.zup.projetofinalindividual.databinding.FragmentListaAnimalBinding
-import br.com.zup.projetofinalindividual.ui.home.view.HomeActivity
 import br.com.zup.projetofinalindividual.ui.listaAnimal.viewmodel.ListaAnimalViewModel
 import br.com.zup.projetofinalindividual.viewstate.ViewState
 
