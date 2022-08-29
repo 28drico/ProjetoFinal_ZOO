@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
-import br.com.zup.projetofinalindividual.data.model.AnimalResult
 import br.com.zup.projetofinalindividual.databinding.ListaAnimalItemBinding
 import com.squareup.picasso.Picasso
 

@@ -3,7 +3,6 @@ package br.com.zup.projetofinalindividual.domain.usecase
 import android.app.Application
 import br.com.zup.projetofinalindividual.data.datasource.local.database.AnimalDatabase
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
-import br.com.zup.projetofinalindividual.data.model.AnimalResult
 import br.com.zup.projetofinalindividual.domain.repository.AnimaisRepository
 import br.com.zup.projetofinalindividual.viewstate.ViewState
 
