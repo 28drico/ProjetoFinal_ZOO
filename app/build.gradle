@@ -70,8 +70,8 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.5.1")
 
     //room
-    implementation("androidx.room:room-runtime:2.4.2")
-    kapt("androidx.room:room-compiler:2.4.2")
+    implementation("androidx.room:room-runtime:2.4.3")
+    kapt("androidx.room:room-compiler:2.4.3")
 
     //picasso
     implementation 'com.squareup.picasso:picasso:2.71828'

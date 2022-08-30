@@ -10,4 +10,6 @@
     <dimen name="size_40dp">40dp</dimen>
     <dimen name="size_150dp">150dp</dimen>
     <dimen name="size_50dp">50dp</dimen>
+    <dimen name="sizeText_20sp">20sp</dimen>
+    <dimen name="sizeText_15sp">15sp</dimen>
 </resources>

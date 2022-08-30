@@ -14,7 +14,6 @@ import br.com.zup.projetofinalindividual.FAVORITO_SUCESSO
 import br.com.zup.projetofinalindividual.R
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
 import br.com.zup.projetofinalindividual.databinding.FragmentDetalheItemAnimalBinding
-import br.com.zup.projetofinalindividual.ui.listaAnimal.viewmodel.ListaAnimalViewModel
 import br.com.zup.projetofinalindividual.ui.listaFavorito.viewmodel.ListaFavoritoViewModel
 import com.squareup.picasso.Picasso
 
