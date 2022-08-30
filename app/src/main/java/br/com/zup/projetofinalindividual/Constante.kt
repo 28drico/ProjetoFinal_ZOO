@@ -1,5 +1,8 @@
 package br.com.zup.projetofinalindividual
 
 
-const val URL_BASE_IMG = "https://zoo-animal-api.herokuapp.com/animals/rand"
-const val ANIMAL_KEY = "PERSONAGEM_KEY"
+const val ANIMAL_KEY = "ANIMAL_KEY"
+const val FALHA_DISFAVORITA = "disfavorito falhando"
+const val FALHA_CARREGAR = "Carregar falhando"
+const val FAVORITO_SUCESSO = "Animal favorito com sucesso"
+const val DESFAVORITO = "Animal desfavoritado"

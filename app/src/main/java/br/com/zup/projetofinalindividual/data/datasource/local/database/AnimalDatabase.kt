@@ -5,9 +5,9 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import br.com.zup.projetofinalindividual.data.datasource.local.dao.AnimalDao
-import br.com.zup.projetofinalindividual.data.model.AnimalResult
+import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
 
-@Database(entities = [AnimalResult::class], version = 2)
+@Database(entities = [AnimalResponseItem::class], version = 3)
 abstract class AnimalDatabase : RoomDatabase() {
     abstract fun animalDao(): AnimalDao
 
@@ -24,7 +24,7 @@ abstract class AnimalDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     AnimalDatabase::class.java,
-                    "personagem_database"
+                    "animal_database"
                 ).fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance

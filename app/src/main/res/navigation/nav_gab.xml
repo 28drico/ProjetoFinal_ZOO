@@ -19,12 +19,15 @@
     </fragment>
     <fragment
         android:id="@+id/listaFavoritoFragment"
-        android:name="br.com.zup.projetofinalindividual.ui.listaFavorito.ListaFavoritoFragment"
+        android:name="br.com.zup.projetofinalindividual.ui.listaFavorito.view.ListaFavoritoFragment"
         android:label="fragment_lista_favorito"
         tools:layout="@layout/fragment_lista_favorito" >
         <action
             android:id="@+id/action_listaFavoritoFragment_to_listaAnimalFragment"
             app:destination="@id/listaAnimalFragment" />
+        <action
+            android:id="@+id/action_listaFavoritoFragment_to_detalheItemAnimalFragment"
+            app:destination="@id/detalheItemAnimalFragment" />
     </fragment>
     <fragment
         android:id="@+id/detalheItemAnimalFragment"

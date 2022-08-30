@@ -2,57 +2,53 @@ package br.com.zup.projetofinalindividual.domain.usecase
 
 import android.app.Application
 import br.com.zup.projetofinalindividual.data.datasource.local.database.AnimalDatabase
-import br.com.zup.projetofinalindividual.data.model.AnimalResult
+import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
 import br.com.zup.projetofinalindividual.domain.repository.AnimaisRepository
 import br.com.zup.projetofinalindividual.viewstate.ViewState
 
-class AnimalUseCase(application: Application) {
+class AnimalUseCase (application: Application){
 
     private val animalDao = AnimalDatabase.getAnimaisDataBase(application).animalDao()
     private val animaisRepository = AnimaisRepository(animalDao)
 
-    suspend fun getAllAnimaisNetwork(): ViewState<List<AnimalResult>> {
+    suspend fun getAllAnimaisNetwork(): ViewState<List<AnimalResponseItem>> {
         return try {
             val animal = animaisRepository.getAllAnimaisNetwork()
-//            animaisRepository.insertAllAnimalDataBase(animal.animaisResult)
-            ViewState.Success(animal.animaisResult)
+            animaisRepository.insertAllAnimalDataBase(animal)
+            ViewState.Success(animal)
         }catch (ex : Exception){
             getAllAnimais()
         }
     }
 
-    fun getAllAnimais():ViewState<List<AnimalResult>>{
+    fun getAllAnimais():ViewState<List<AnimalResponseItem>>{
         return try {
             val animal = animaisRepository.getAllAnimal()
+                ViewState.Success(animal)
+        }catch (ex : Exception){
+            ViewState.Error(Exception("erro"))
+        }
+    }
+
+    fun getAllFavoritoAnimais(): ViewState<List<AnimalResponseItem>>{
+        return try {
+            val animal = animaisRepository.getAllFavorito()
             if (animal.isEmpty()){
                 ViewState.EmptyList(animal)
             }else{
                 ViewState.Success(animal)
             }
-        }catch (ex : Exception){
-            ViewState.Error(Exception("Erro"))
+        }catch (e : Exception){
+            ViewState.Error(Exception("erro"))
         }
     }
 
-//    fun getAllFavoritoAnimal(): ViewState<List<AnimalResult>>{
-//        return try {
-//            val animal = animaisRepository.getAllFavorito()
-//            if (animal.isEmpty()){
-//                ViewState.EmptyList(animal)
-//            }else{
-//                ViewState.Success(animal)
-//            }
-//        }catch (ex : Exception){
-//            ViewState.Error(Exception("erro"))
-//        }
-//    }
-//
-//    fun updateFavoritoPersonagens(personagem: AnimalResult): ViewState<AnimalResult>{
-//        return try {
-//            animaisRepository.updateFavoritoPersonagens(personagem)
-//            ViewState.Success(personagem)
-//        }catch (ex : Exception){
-//            ViewState.Error(Exception("erro"))
-//        }
-//    }
+    fun updateFavoritoAnimal(animal: AnimalResponseItem): ViewState<AnimalResponseItem>{
+        return try {
+            animaisRepository.updateFavoritoAnimal(animal)
+            ViewState.Success(animal)
+        }catch (e : Exception){
+            ViewState.Error(Exception("erro"))
+        }
+    }
 }
