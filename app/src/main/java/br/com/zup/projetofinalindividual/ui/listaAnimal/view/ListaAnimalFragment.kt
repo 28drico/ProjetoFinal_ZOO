@@ -14,7 +14,6 @@ import br.com.zup.projetofinalindividual.ANIMAL_KEY
 import br.com.zup.projetofinalindividual.R
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
 import br.com.zup.projetofinalindividual.databinding.FragmentListaAnimalBinding
-import br.com.zup.projetofinalindividual.ui.home.view.HomeActivity
 import br.com.zup.projetofinalindividual.ui.listaAnimal.viewmodel.ListaAnimalViewModel
 import br.com.zup.projetofinalindividual.viewstate.ViewState
 
@@ -42,14 +41,11 @@ class ListaAnimalFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setUpRvAnimais()
-
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         viewmodel.getAllAnimalNetwork()
+        initObserver()
 
     }
+
 
     private fun initObserver(){
         viewmodel.animalList.observe(this.viewLifecycleOwner){
@@ -76,7 +72,6 @@ class ListaAnimalFragment : Fragment() {
         }
     }
     private fun setUpRvAnimais(){
-        initObserver()
         binding.rvListaAnimal.adapter = adapter
         binding.rvListaAnimal.layoutManager = LinearLayoutManager(context)
     }

@@ -18,7 +18,4 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/lista_animal_item"/>
 
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

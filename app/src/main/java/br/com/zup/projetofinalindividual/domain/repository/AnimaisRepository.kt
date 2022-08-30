@@ -17,4 +17,10 @@ class AnimaisRepository(private val animalDao: AnimalDao) {
     suspend fun getAllAnimaisNetwork(): AnimalResponse {
         return RetrofitService.apiService.getAllAnimalNetwork()
     }
+
+    fun getAllFavorito(): List<AnimalResponseItem> = animalDao.getAllFavoritoAnimal()
+
+    fun updateFavoritoAnimal(animal: AnimalResponseItem){
+        animalDao.updateFavoritoAnimal(animal)
+    }
 }

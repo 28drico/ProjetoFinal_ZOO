@@ -14,10 +14,10 @@ class AnimalAdapter(
 
 
     class ViewHolder(val binding: ListaAnimalItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun showAnimal(animalResult:AnimalResponseItem) {
-            Picasso.get().load(animalResult.imageLink)
+        fun showAnimal(animal:AnimalResponseItem) {
+            Picasso.get().load(animal.imageLink)
                 .into(binding.ivItemImage)
-            binding.tvTipoAnimal.text = animalResult.name
+            binding.tvTipoAnimal.text = animal.name
         }
     }
 

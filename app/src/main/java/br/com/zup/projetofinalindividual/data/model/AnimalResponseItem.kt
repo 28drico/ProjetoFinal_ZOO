@@ -39,5 +39,7 @@ data class AnimalResponseItem(
     @SerializedName("weight_max")
     @ColumnInfo(name = "weight_max")val weightMax: String,
     @SerializedName("weight_min")
-    @ColumnInfo(name = "weight_min")val weightMin: String
+    @ColumnInfo(name = "weight_min")val weightMin: String,
+
+    var isFavorite : Boolean
 ):Parcelable
