@@ -5,10 +5,13 @@
     app:cardCornerRadius="@dimen/size_15dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:backgroundTint="@color/vermelho"
     android:layout_margin="@dimen/size_16dp"
     android:id="@+id/cvListaAnimalFavorito">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            app:cardCornerRadius="@dimen/size_15dp"
+            android:layout_margin="@dimen/size_10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
@@ -16,8 +19,9 @@
             <ImageView
                 android:id="@+id/ivItemImage"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="@dimen/size_150dp"
                 android:contentDescription="@string/imagem_animal"
+                app:cardCornerRadius="@dimen/size_15dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/hylobates_syndactylus"
                 app:layout_constraintBottom_toBottomOf="parent"

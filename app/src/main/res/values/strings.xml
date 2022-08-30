@@ -19,4 +19,5 @@
     <string name="faixa_geografia">Faixa geografia</string>
     <string name="icone_de_coracao_sem_cor">Icone de coração sem cor</string>
     <string name="imagem_animal">Imagem animal</string>
+    <string name="tipo_animal">Tipo animal</string>
 </resources>
