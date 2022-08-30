@@ -1,4 +1,4 @@
-package br.com.zup.projetofinalindividual.ui.detalhe
+package br.com.zup.projetofinalindividual.ui.detalhe.view
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/size_16dp"
-    tools:context=".ui.detalhe.DetalheItemAnimalFragment">
+    tools:context=".ui.detalhe.view.DetalheItemAnimalFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
