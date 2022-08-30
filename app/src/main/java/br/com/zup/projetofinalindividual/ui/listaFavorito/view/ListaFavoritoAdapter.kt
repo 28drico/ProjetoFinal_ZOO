@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem
+import br.com.zup.projetofinalindividual.databinding.ListaAnimalFavoritoItemBinding
 import br.com.zup.projetofinalindividual.databinding.ListaAnimalItemBinding
 import com.squareup.picasso.Picasso
 
@@ -12,17 +13,15 @@ class ListaFavoritoAdapter (
             private val clickAnimal:(animal: AnimalResponseItem) -> Unit
 ): RecyclerView.Adapter<ListaFavoritoAdapter.ViewHolder>() {
 
-    class ViewHolder(val binding: ListaAnimalItemBinding) : RecyclerView.ViewHolder(binding.root) {
-
+    class ViewHolder(val binding: ListaAnimalFavoritoItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun showAnimal(animal: AnimalResponseItem) {
             Picasso.get().load(animal.imageLink)
                 .into(binding.ivItemImage)
-            binding.tvTipoAnimal.text = animal.name
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ListaAnimalItemBinding.inflate(LayoutInflater.from(parent.context))
+        val binding = ListaAnimalFavoritoItemBinding.inflate(LayoutInflater.from(parent.context))
         return ViewHolder(binding)
 
     }
@@ -30,7 +29,7 @@ class ListaFavoritoAdapter (
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
        val animal = animalList[position]
         holder.showAnimal(animal)
-        holder.binding.cvListaAnimal.setOnClickListener{
+        holder.binding.cvListaAnimalFavorito.setOnClickListener{
             clickAnimal(animal)
             updateFavoritoList(animalList)
         }

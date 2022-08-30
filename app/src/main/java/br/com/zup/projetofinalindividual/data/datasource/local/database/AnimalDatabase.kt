@@ -24,7 +24,7 @@ abstract class AnimalDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     AnimalDatabase::class.java,
-                    "personagem_database"
+                    "animal_database"
                 ).fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance

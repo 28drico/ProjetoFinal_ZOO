@@ -41,14 +41,11 @@ class ListaAnimalFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setUpRvAnimais()
-
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         viewmodel.getAllAnimalNetwork()
+        initObserver()
 
     }
+
 
     private fun initObserver(){
         viewmodel.animalList.observe(this.viewLifecycleOwner){
@@ -75,7 +72,6 @@ class ListaAnimalFragment : Fragment() {
         }
     }
     private fun setUpRvAnimais(){
-        initObserver()
         binding.rvListaAnimal.adapter = adapter
         binding.rvListaAnimal.layoutManager = LinearLayoutManager(context)
     }
