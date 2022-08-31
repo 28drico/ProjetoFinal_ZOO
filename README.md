@@ -12,7 +12,9 @@ Podendo ser acessado de um aparelho móvel, a qualquer hora e local. Além disso
 
 ## STATUS DO PROJETO:
 
-Projeto em desenvolvimento
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
 ## LINK FIGMA DO PROJETO:
 <a href="https://www.figma.com/proto/fkcWL1cqUN7vIXWrdrmLcS/ZOO-(Copy)?node-id=0%3A1" target="_blank">ACESSE PROTÓTIPO NAVEGAVÉL PLATAFORMA FIGMA</a>
