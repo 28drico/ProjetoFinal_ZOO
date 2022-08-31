@@ -30,12 +30,8 @@ PRINCIPAIS FUNCIONALIDADES:
 
 ○ Criação de lista de animais favoritos
 
-![pzup](https://user-images.githubusercontent.com/110492423/187603669-4013c79c-ed74-48b2-aee4-acccad77edf5.mp4)
 
-
-
-
-
+![Video_220831025728](https://user-images.githubusercontent.com/110492423/187604989-a276554f-f3ab-4a83-a661-2d7bba8e4d3f.gif)
 
 
 ## ACESSO AO APLICATIVO:
