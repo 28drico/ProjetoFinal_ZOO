@@ -1,5 +1,5 @@
 # <img width="308" alt="tana_blacklogo" src="ZOOParaSplash.png">
-
+<img src="ZOOParaSplash.png" width=115
 ## NOME DO PROJETO: ZOO
 
 ## VERSÃO DO APLICATIVO: 1.0
