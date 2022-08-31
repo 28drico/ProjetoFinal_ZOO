@@ -1,4 +1,7 @@
-## NOME DO PROJETO: ANIMAIS DE ZOOLOGICO
+
+<h1 align="center"> ANIMAIS DE ZOOLOGICO</h1>
+
+![Imagem de Logo.](https://user-images.githubusercontent.com/110492423/187594502-1922b051-7510-4b4c-bba8-e878a0f0c95e.png)
 
 ## VERSÃO DO APLICATIVO: 1.0
 
@@ -9,7 +12,9 @@ Podendo ser acessado de um aparelho móvel, a qualquer hora e local. Além disso
 
 ## STATUS DO PROJETO:
 
-Projeto em desenvolvimento
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
 ## LINK FIGMA DO PROJETO:
 <a href="https://www.figma.com/proto/fkcWL1cqUN7vIXWrdrmLcS/ZOO-(Copy)?node-id=0%3A1" target="_blank">ACESSE PROTÓTIPO NAVEGAVÉL PLATAFORMA FIGMA</a>
@@ -26,6 +31,7 @@ PRINCIPAIS FUNCIONALIDADES:
 ○ Criação de lista de animais favoritos
 
 
+![Video_220831025728](https://user-images.githubusercontent.com/110492423/187604989-a276554f-f3ab-4a83-a661-2d7bba8e4d3f.gif)
 
 
 ## ACESSO AO APLICATIVO:
