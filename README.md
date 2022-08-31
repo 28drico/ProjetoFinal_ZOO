@@ -29,6 +29,11 @@ PRINCIPAIS FUNCIONALIDADES:
 ○ Adicionar itens ao animal
 
 ○ Criação de lista de animais favoritos
+![pzup](https://user-images.githubusercontent.com/102183303/185445172-263fd2d9-6a32-45a2-b88b-7a388b11eb94.gif)
+
+
+
+![pzup](https://user-images.githubusercontent.com/110492423/187603669-4013c79c-ed74-48b2-aee4-acccad77edf5.gif)
 
 
 
