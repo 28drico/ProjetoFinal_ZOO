@@ -13,7 +13,8 @@ Podendo ser acessado de um aparelho móvel, a qualquer hora e local. Além disso
 Projeto em desenvolvimento
 
 ## LINK FIGMA DO PROJETO:
-<a href="https://www.figma.com/proto/fkcWL1cqUN7vIXWrdrmLcS/ZOO-(Copy)?node-id=0%3A1" target="_blank">ACESSE PROTÓTIPO NAVEGAVÉL PLATAFORMA FIGMA</a>
+<a href="https://www.figma.com/![ZOOParaSplash](https://user-images.githubusercontent.com/110492423/187594247-51f7b1b8-ec30-41e1-b07b-5a15c9bf5df8.png)
+proto/fkcWL1cqUN7vIXWrdrmLcS/ZOO-(Copy)?node-id=0%3A1" target="_blank">ACESSE PROTÓTIPO NAVEGAVÉL PLATAFORMA FIGMA</a>
 
 
 ## FUNCIONALIDADES E DEMONSTRAÇÃO DA APLICAÇÃO:
