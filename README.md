@@ -1,4 +1,4 @@
-# <img width="308" alt="tana_blacklogo" src="https://user-images.githubusercontent.com/ZOOParaSplash.png">
+# <img width="308" alt="tana_blacklogo" src="ZOOParaSplash.png">
 
 ## NOME DO PROJETO: ZOO
 
