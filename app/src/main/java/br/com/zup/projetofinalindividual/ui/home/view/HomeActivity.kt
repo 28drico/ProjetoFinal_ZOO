@@ -20,15 +20,22 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        toolbar()
+        actionbar()
+        bottomNavigation()
+    }
+
+   private fun toolbar(){
         toolbar = binding.toolbar
         toolbar.title = ""
         setSupportActionBar(toolbar)
+    }
 
+    private fun actionbar(){
+        setupActionBarWithNavController(navController)
+    }
 
-
-      setupActionBarWithNavController(navController)
-        binding.bottomNavigationView.setupWithNavController(navController)
-
+    private fun bottomNavigation(){
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.ListaAnimal -> {
@@ -44,6 +51,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
     }
+
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
