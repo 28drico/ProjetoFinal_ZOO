@@ -1,11 +1,11 @@
-# <img width="308" alt="tana_blacklogo" src="ZOOParaSplash.png">
 ## NOME DO PROJETO: ZOO
 
 ## VERSÃO DO APLICATIVO: 1.0
 
 ## DESCRIÇÃO DO PROJETO:
 
-O aplicativo  pertencente a Zup tem como objetivo agilizar o fluxo de pedidos em restaurantes afim de exigir menos a presença do garçon e oferecer uma experiencia personalizada ao cliente que de maneira intuitiva pode ver detalhes do prato, valores e podendo realizar ele mesmo seu pedido quando  decidir. Dentre as funcionalidades da aplicação está a abertura da comanda via qrcode, acesso  ao cardapio,  inserção de itens em seu pedido, criação edição de lista de favoritos contendo pratos preferidos, fechamento da conta e solicitação para que o garço traga a mesma para pagamento.
+O aplicativo tem como objetivo facilitar na busca e conhecimento dos tipos de animais e suas caracteristicas.
+Podendo ser acessado de um aparelho móvel, a qualquer hora e local. Além disso, permite também salvar os animais preferidos na lista de favoritos.
 
 ## STATUS DO PROJETO:
 
@@ -25,9 +25,6 @@ PRINCIPAIS FUNCIONALIDADES:
 
 ○ Criação de lista de animais favoritos
 
-
-
-![pzup](https://user-images.githubusercontent.com/102183303/185445172-263fd2d9-6a32-45a2-b88b-7a388b11eb94.gif)
 
 
 
