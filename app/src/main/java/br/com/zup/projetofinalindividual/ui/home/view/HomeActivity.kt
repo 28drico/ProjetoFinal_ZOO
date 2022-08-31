@@ -1,12 +1,11 @@
 package br.com.zup.projetofinalindividual.ui.home.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import br.com.zup.projetofinalindividual.R
 import br.com.zup.projetofinalindividual.databinding.ActivityHomeBinding
 
