@@ -1,6 +1,7 @@
 
-<h1 align="center"> ANIMAIS DE ZOOLOGICO 
-![Imagem de Logo.](https://user-images.githubusercontent.com/110492423/187594502-1922b051-7510-4b4c-bba8-e878a0f0c95e.png)</h1>
+<h1 align="center"> ANIMAIS DE ZOOLOGICO</h1>
+
+![Imagem de Logo.](https://user-images.githubusercontent.com/110492423/187594502-1922b051-7510-4b4c-bba8-e878a0f0c95e.png)
 
 ## VERSÃO DO APLICATIVO: 1.0
 
