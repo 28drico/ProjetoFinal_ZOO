@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.zup.projetofinalindividual.ANIMAL_KEY
 import br.com.zup.projetofinalindividual.R
 import br.com.zup.projetofinalindividual.data.model.AnimalResponseItem

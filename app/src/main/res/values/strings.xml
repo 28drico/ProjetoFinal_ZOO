@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ZOO</string>
-    <string name="zoo_panda_girafa">ZOO dentro dos duas letras O possui figurinha animal, primeira letra o possui figurinha de panda e outra segunda letra o possui girafa</string>
+    <string name="zoo_panda_girafa">ZOO dentro dos duas letras O possui figurinha animais, a primeira letra o possui figurinha de panda e outra segunda letra o possui girafa</string>
     <string name="logo_zoo">logo ZOO</string>
     <string name="lista_animal">Lista animal</string>
     <string name="lista_favorito">Lista Favorito</string>
@@ -19,4 +19,16 @@
     <string name="faixa_geografia">Faixa geografia</string>
     <string name="icone_de_coracao_sem_cor">Icone de coração sem cor</string>
     <string name="imagem_animal">Imagem animal</string>
+    <string name="tipo_animal">Tipo animal</string>
+    <string name="tempo_de_ativo">Tempo de ativo:</string>
+    <string name="textview_tipo_de_animal">Tipo de animal:</string>
+    <string name="textview_comprimento_minimo">Comprimento minimo:</string>
+    <string name="textview_comprimento_maximo">Comprimento maximo:</string>
+    <string name="textView_faixa_geografia">Faixa geografia:</string>
+    <string name="textView_dieta">Dieta:</string>
+    <string name="textView_habitat">Habitat:</string>
+    <string name="vida_util">vida util</string>
+    <string name="textView_vida_util">Vida util:</string>
+    <string name="textView_peso_maximo">Peso maximo:</string>
+    <string name="textView_peso_minimo">Peso minimo:</string>
 </resources>

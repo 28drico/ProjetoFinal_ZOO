@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/detalheItemAnimalFragment"
-        android:name="br.com.zup.projetofinalindividual.ui.detalhe.DetalheItemAnimalFragment"
+        android:name="br.com.zup.projetofinalindividual.ui.detalhe.view.DetalheItemAnimalFragment"
         android:label="fragment_detalhe_item_animal"
         tools:layout="@layout/fragment_detalhe_item_animal" >
         <action
